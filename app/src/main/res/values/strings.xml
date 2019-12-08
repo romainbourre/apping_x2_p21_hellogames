@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">HelloGames</string>
     <string name="image_description">Une image</string>
+    <string name="game_description">TextView</string>
+    <string name="game_year">TextView</string>
+    <string name="game_players">TextView</string>
+    <string name="game_type">TextView</string>
+    <string name="game_name">GameName</string>
 </resources>
