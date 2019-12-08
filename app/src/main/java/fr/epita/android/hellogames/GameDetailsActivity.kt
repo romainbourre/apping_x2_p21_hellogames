@@ -1,5 +1,7 @@
 package fr.epita.android.hellogames
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
@@ -18,5 +20,12 @@ class GameDetailsActivity : AppCompatActivity() {
         game_players.text = game.players.toString()
         game_year.text = game.year.toString()
         game_description.text = game.description_en
+
+        val actionView = Intent(Intent.ACTION_VIEW)
+        actionView.data = Uri.parse(game.url)
+
+        more_button.setOnClickListener {
+            startActivity(actionView)
+        }
     }
 }
